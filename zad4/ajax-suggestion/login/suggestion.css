@@ -1,0 +1,22 @@
+ul {
+    display: inline-block;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+li:active {
+    color: blue;
+    position: relative;
+    top: 1px;
+}
+
+.vertical-align-top {
+    vertical-align: top !important;
+}
