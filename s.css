@@ -1,0 +1,45 @@
+html{height: 100%;}
+body{
+    height: 100%;
+    background-image: url(deski3.jpg);
+    color: #FEFFCC;
+}
+div.menu{
+    height: 7%;
+    width: 70%;
+}
+ul.menu{
+    display: inline-block;
+    text-align: center;
+	list-style-type: none;
+	position: fixed;
+}
+ul li.menu:hover{
+	background-color: #FE7337;
+    border: none;
+}
+a:link{
+    color: #190800
+}
+a:visited{
+    color: #FCFC98 /*#DBFF94*/
+    }
+ul li.menu {
+	display: inline;
+	padding: 10px;
+	font-family: Papyrus, Tahoma, sans-serif;
+    font-size: 20px;
+	color: #ffffff;
+	border-radius: 5px 5px;
+	background-color: #f20202;
+    margin-right: 5px;
+}
+p.menu{
+    font-weight: bolder;
+    display: inline-flex;
+    font-size: 20px;
+    vertical-align: middle;
+}
+FRAMESET{
+    border: 1px solid orange;
+}

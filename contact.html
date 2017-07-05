@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+    	
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+        <META NAME="Author" CONTENT="Eryk Banaś">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="AB.ico" type="image/x-icon" />
+		<link type="text/css" rel="stylesheet" href="s.css"/>
+		<title>Banaś Eryk</title>
+	</head>
+	<body>
+        
+        <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+            function sprawdz(formularz){
+                for (i = 0; i < formularz.length; i++){
+                    var pole = formularz.elements[i];
+                    if (pole.type == "text" && pole.value == ""){
+                        alert("Proszę wypełnić wszystkie pola!");
+                        return false;
+                    }
+                }
+                
+                return true;
+            }
+        </SCRIPT>
+                    
+<FORM ACTION="mailto:eryk.banas@nzspw.pl" METHOD="post"  ENCTYPE="text/plain" onreset="if (!confirm('Czy na pewno chcesz wyczyścić cały formularz?')) return false" onsubmit="if (sprawdz(this)) return true; return false" >
+         <br>
+    Podaj swoje imię: <br>
+    <INPUT TYPE="text" NAME="imie" ><BR><br>
+    Ile masz lat?<br>
+         <SELECT NAME="x">
+                <OPTION>mniej niż 18
+                <OPTION>18-25
+                <OPTION>26-35
+                <OPTION>więcej niż 36
+        </SELECT>
+              <br><br>
+        
+        Czy podobała Ci się moja strona?<br>
+            <INPUT TYPE="radio" NAME="na" VALUE="tak" CHECKED>Tak<br>
+            <INPUT TYPE="radio" NAME="na" VALUE="nie">Nie<br>
+            <INPUT TYPE="radio" NAME="na" VALUE="moze">Nie wiem / Może
+              <br><br>
+        
+        Napisz jakiś komentarz o mojej stronie! <br>   
+        <TEXTAREA NAME="kom" COLS="40" ROWS="5">Jest wspaniała :)             </TEXTAREA>
+            <br><br>
+                
+        Której przeglądarki używasz?<br>
+                          
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="Chrome">Chrome                  <br/>
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="Mozilla">Mozilla
+            <br/>
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="Opera">Opera
+            <br/>
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="Explorel">Explorel              <br/>
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="Safari">Safari
+            <br/>
+        <INPUT TYPE="checkbox" NAME="przegl" VALUE="InnaP">Inna<br/>
+            <br>
+                 
+        Wyślij mi jakiś plik!
+            <br>
+        <INPUT TYPE="file" NAME="nazwa"> 
+            <br><br><br>
+            
+        <INPUT TYPE="submit" VALUE="Wyślij" disabled="disabled">
+        <BUTTON TYPE="reset">Wyczyść formularz</BUTTON>
+</FORM>
+<br><br>
+            
+    </body>
+</html>
