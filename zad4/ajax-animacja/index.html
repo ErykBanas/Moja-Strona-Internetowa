@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Eryk Banas" />
+    <meta name="description" content="Programowanie internetowe -- Eryk Banas" />
+    <meta name="keywords" content="Programowanie internetowe" />
+    <title>AJAX -- animacja | Programowanie Internetow Lab | Eryk Banas</title>
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../mainStyle.css" />
+    <link rel="stylesheet" type="text/css" href="../../purecss/forms.css" /><!-- purecss.io -->
+    <link rel="stylesheet" type="text/css" href="../../purecss/buttons.css" /><!-- purecss.io -->
+    <link rel="stylesheet" type="text/css" href="../../purecss/tables.css" /><!-- purecss.io -->
+    <link rel="stylesheet" type="text/css" href="./animation.css" /><!--  -->
+    <script type="text/javascript" src="./animation.js"></script>
+    <script type="text/javascript" src="./resizing-input-text.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="textAlignCenter">
+            <h1>Programowanie Internetowe</h1>
+        </header>
+        <section>
+            <h2>AJAX -- animacja</h2>
+            <article class="border-1px-solid-black padding-1em">
+                <section>
+                    <div class="margin-1em-auto">
+                        <input id="addend_a" type="text" class="resizing-input-text" />
+                        <span>+</span>
+                        <input id="addend_b" type="text" class="resizing-input-text" />
+                        <span>=</span>
+                        <output id="sum"></output>
+                    </div>
+                    
+                    <button id="synchronous-GET" class="pure-button">synchronicznie-GET</button>
+                    <button id="asynchronous-GET" class="pure-button">asynchronicznie-GET</button>
+                    <button id="synchronous-POST" class="pure-button">synchronicznie-POST</button>
+                    <button id="asynchronous-POST" class="pure-button">asynchronicznie-POST</button>
+                    
+                    <div id="squareContainer" class="margin-1em-auto border-1px-solid-black" >
+                        <div id="square"></div>
+                    </div>
+                    
+                    <button id="start" class="pure-button">Start</button>
+                    <button id="stop" class="pure-button">Stop</button>
+                </section>
+            </article>
+        </section>
+        <footer class="textAlignCenter">
+            <p>
+                Copyright &copy; Eryk Banas &bull; Strona wykonana wramach zajęć: Programowanie internetowe.
+            </p>
+            <p>
+                <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                    <img src="http://www.w3.org/Icons/w3c_home.png" 
+                         alt="Valid HTML 5"  
+                         height="31" width="88" />
+                </a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss"
+                         alt="Poprawny CSS!" />
+                </a>
+            </p>
+            <p>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href )" 
+                   title="Źródło HTML" >Źródło HTML</a>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href.substring(0, location.href.lastIndexOf('/zad4/')) + '/mainStyle.css' )" 
+                   title="Styl głowny" >Źródło CSS</a>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href.substring(0, location.href.lastIndexOf('/')) + '/animation.css' )" 
+                   title="Styl strony" >Źródło CSS</a>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href.substring(0, location.href.lastIndexOf('/zad4/')) + '/purecss/forms.css' )" 
+                   title="Styl formularzy (forms)" >Źródło CSS</a>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href.substring(0, location.href.lastIndexOf('/zad4/')) + '/purecss/buttons.css' )"
+                   title="Styl przycisków (buttons)">Źródło CSS</a>
+                <a href="javascript:void(0)" 
+                   onclick="window.open( 'view-source:' + location.href.substring(0, location.href.lastIndexOf('/')) + '/animation.js' )" 
+                   title="Źródło JavaScript" >Źródło JavaScript</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

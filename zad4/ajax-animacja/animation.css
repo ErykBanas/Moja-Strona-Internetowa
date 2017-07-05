@@ -1,0 +1,16 @@
+#squareContainer {
+    
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+#addend_a, #addend_b {
+    padding: 0.375em;
+    font-size: inherit;
+    min-width: 1em;
+    width: 1em;
+}
